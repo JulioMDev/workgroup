@@ -18,17 +18,18 @@ header {
     background-color: black;
     display: flex;
     width: 100%;
-    height: 40px;
+    height: fit-content;
     justify-content: space-between;
+    align-items: center;
 }
 
 .box_logo {
-    padding: 10px;
+    margin-inline: 20px;
+    margin-block: 1rem;
 }
 
 .logo {
-    width: 50px;
-
+    width: 4rem;
 }
 
 .nav_container {
@@ -45,16 +46,24 @@ header {
 
 .nav li {
     text-align: center;
-    margin: 20px;
+    margin-inline: 20px;
 }
 
 .nav_item {
     color: white;
     text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .nav_item:hover {
     color: #E5233A;
+}
+
+.cart > * {
+    color: white;
+    text-decoration: none;
+    margin-inline: 20px;
 }
 
 .slider {
@@ -69,7 +78,7 @@ header {
     justify-content: center;
 }
 
-.box_title_slider>div {
+.box_title_slider > div {
     padding: 10px;
     text-align: center;
 }
@@ -84,11 +93,13 @@ header {
     width: 150px;
     color: white;
     background-color: black;
-    font-size: 15px;
+    font-size: .8rem;
     font-family: 'Poppins', sans-serif;
     border-radius: 25px;
     margin-top: 15px;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .word_red_slider {
@@ -263,7 +274,7 @@ label {
         width: 50%;
     }
 
-    .box_title_slider>div {
+    .box_title_slider > div {
         margin-left: 70px;
         text-align: left;
     }
