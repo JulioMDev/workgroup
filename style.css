@@ -91,7 +91,7 @@ header {
 }
 
 .title_slider {
-    font-size: 50px;
+    font-size: 3rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -102,8 +102,8 @@ header {
     background-color: black;
     font-size: .8rem;
     font-family: 'Poppins', sans-serif;
-    border-radius: 25px;
-    margin-top: 15px;
+    border-radius: 2rem;
+    margin-top: 1rem;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 600;
@@ -132,8 +132,8 @@ header {
     color: black;
     width: 100%;
     text-align: center;
-    font-size: 25px;
-    padding-top: 30px;
+    font-size: 1.5rem;
+    padding-top: 2rem;
 }
 
 .box_products {
@@ -144,7 +144,7 @@ header {
 .box_productos_a {
     display: flex;
     width: 100%;
-    margin: 50px 0;
+    margin: 3rem 0;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     flex-direction: column;
@@ -161,6 +161,7 @@ header {
     position: relative;
 }
 
+/* product container on hover make visible product_favorite */
 .product_container:hover .product_favorite
 {
     visibility: visible;
@@ -187,7 +188,7 @@ header {
 }
 
 .product_actions{
-    grid-column: 3 / 5;
+    grid-column: 4 / 5;
 }
 
 .button_add_favorite{
@@ -206,8 +207,8 @@ header {
 .product_favorite{
     visibility: hidden;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: .8rem;
+    right: .8rem;
 }
 
 .button_add_cart
@@ -292,6 +293,7 @@ header {
     font-family: 'Poppins', sans-serif;
 }
 
+/* input form option hover focus */
 .input_form:focus {
     outline: none;
     outline: 2px solid #E5233A;
@@ -345,6 +347,14 @@ label {
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 0.8em;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.box_social_media > a{
+    color: white;
+    text-decoration: none;
+    margin: 1rem 0.5rem;
 }
 
 /* Estilos para pantallas mayores a 768px */

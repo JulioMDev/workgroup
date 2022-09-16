@@ -18,7 +18,7 @@ function updateCart()
 
 function addToFavorite()
 {
-  iziToast.success({
+  iziToast.show({
     title: 'Agregado',
     message: 'Producto agregado a favoritos',
   });
