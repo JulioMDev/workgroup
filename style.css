@@ -1,0 +1,296 @@
+/*Selectores universales, suprimen los estilo predeterminados del navegador*/
+* {
+    box-sizing: border-box;
+    /*Reemplatea el calculo de las dimensiones de las cajas*/
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+}
+
+.box_logo {
+    padding: 10px;
+}
+
+.logo {
+    width: 50px;
+
+}
+
+.nav_container {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    text-align: center;
+    margin: 20px;
+}
+
+.nav_item {
+    color: white;
+    text-decoration: none;
+}
+
+.nav_item:hover {
+    color: #E5233A;
+}
+
+.slider {
+    background-image: url(./img/photo-1556906781-9a412961c28c.jpg);
+    width: 100%;
+    background-size: cover;
+}
+
+.box_title_slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_title_slider>div {
+    padding: 10px;
+    text-align: center;
+}
+
+.title_slider {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button_slider {
+    height: 50px;
+    width: 150px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.word_red_slider {
+    color: #E5233A;
+}
+
+.image_oferta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nike_reds {
+    width: 50%;
+}
+
+#productos {
+    width: 100%;
+}
+
+.title_products {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.box_products {
+    width: 100%;
+
+}
+
+.box_productos_a {
+    display: flex;
+    width: 100%;
+    margin: 50px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+.producto {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.nike {
+    width: 65%;
+    margin: auto;
+}
+
+.price {
+    color: #E5233A;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* Estilos para la sección Contacto */
+
+#contacto {
+    background-image: url(./img/Recurso\ 1-100.jpg);
+    background-size: cover;
+    padding: 15px;
+}
+
+.title_contacto {
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    color: #E5233A;
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.title_contacto h1 {
+    text-align: center;
+}
+
+.text_title_contacto {
+    color: white;
+}
+
+.box_form {
+    display: flex;
+    justify-content: center;
+}
+
+.form_contacto {
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: grid;
+}
+
+.input_form {
+    height: 24px;
+    width: 320px;
+    border-radius: 12px;
+    border: 0;
+    margin: 6px;
+}
+
+.text_area_form {
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 6px;
+    border: 0;
+}
+
+.input_submit {
+    width: 100px;
+    height: 28px;
+    border-radius: 14px;
+    margin-top: 10px;
+    border: 0;
+    color: white;
+    background-color: #E5233A;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.input_submit :hover {
+    background-color: #F2F2F2;
+}
+
+label {
+    color: white;
+}
+
+.box_footer {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 0.8em;
+}
+
+/* Estilos para pantallas mayores a 768px */
+
+@media (min-width: 768px) {
+    .slider {
+        height: calc(100vh - 40px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider .slider-cuerpo {
+        position: relative;
+    }
+
+    .slider .image_oferta {
+        float: right;
+    }
+
+    .slider .box_title_slider {
+        position: absolute;
+        left: 0;
+        top: calc(50% - 140px);
+    }
+
+    .box_title_slider {
+        width: 50%;
+    }
+
+    .image_oferta {
+        width: 50%;
+    }
+
+    .box_title_slider>div {
+        margin-left: 70px;
+        text-align: left;
+    }
+
+    .nike_reds {
+        width: 80%;
+    }
+
+    .title_slider {
+        font-size: 85px;
+    }
+
+    .box_productos_a {
+        flex-direction: row;
+    }
+
+    .producto {
+        justify-content: space-between;
+    }
+
+    #contacto {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .title_contacto {
+        margin-bottom: 0;
+    }
+}
